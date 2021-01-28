@@ -1,0 +1,70 @@
+/* task 01 */
+.card {
+    border: 1px dashed black;
+    display: flex;
+}
+.card__active {
+    display: inline-block;
+    align-self: start;
+    margin-right: 4px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.card__focus {
+    background-color: red;
+}
+/* task 02 */
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.block {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: darkred;
+}
+.block:not(:last-child) {
+    margin-right: 10px;
+}
+.block__active {
+    background-color: darkslateblue;
+}
+/* task 03 */
+.field {
+    margin: 0 auto;
+    width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.field__cell {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px dashed blueviolet;
+    outline: 1px solid darkslateblue;
+}
+.field__cell_active {
+    background-color: darkslateblue;
+    border: 1px dashed white;
+}
+
+.field_mod .field__cell {
+    background-color: darkslateblue;
+}
+
+.field_mod .field__cell_active {
+    background-color: white;
+}
+/* task 04 */
+.tree__item {
+    cursor: pointer;
+}
+.tree__sub-tree {
+    display: none;
+}
+.tree__sub-tree_open {
+    display: block;
+}
